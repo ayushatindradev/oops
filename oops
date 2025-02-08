@@ -1,0 +1,78 @@
+#include<iostream>
+using namespace std;
+
+class Car{
+public:
+string brand;
+void brand(){
+    cout<<"Brand: "<< brand<< endl;
+}
+};
+class Student{
+    public:
+    string name;
+    int age;
+
+};
+class Dog{
+
+};
+class Car{
+public:
+Car(){
+    cout<<"Car is created !"<<endl;
+}
+~Car(){
+    cout<<"Car is destroyed!"<<endl;
+}
+};
+class Example{
+    private:
+    int secret;
+    public:
+    int number;
+    protected:
+    int data; //can be accessed in derived class
+};
+int main(){
+
+
+// What is Object-Oriented Programming (OOP)?
+
+// oop is a programming paragigm based on objects,which contains data(attribute) and function (method).It helps in organizing code efficienctly.
+
+// 2. What are the four main pillars of OOP?
+// Encapulation-Wrapping data and function together
+// Abstraction -Hiding implementation details from the user
+// Inheritance- Acquring properies from another another class.
+// Polymorphism- multiple form of the same function/method.
+
+// 3. What is a class in C++?
+// A class is blueprint for creating objects.It defines attributed(variables) and behaviour(function)
+
+// 4. What is an object in C++?
+// Car myCar; //object of class car
+
+// 5. How do you define a class in C++?
+
+// Student s1;
+// s1.name="Ayush";
+// s1.age=22;
+// 7. What is the difference between a class and an object?
+// class : A blueprint/template.
+// object: A specific instance of a class
+
+// Dod myDog;// obect
+
+// 8. What is a constructor in C++?
+// A constructor is a specal function that runs when an objet is created
+
+// 9. What is a destructor in C++?
+// A destructor is a special function that runs when object is destroyed
+
+// 10. What is the purpose of public, private, and protected access specifiers?
+// public: -> Accessible everywhere
+// private :-> Accessible only within the class
+// protected:-> Accessible in derived classes
+
+}

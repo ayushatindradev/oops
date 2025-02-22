@@ -74,5 +74,174 @@ int main(){
 // public: -> Accessible everywhere
 // private :-> Accessible only within the class
 // protected:-> Accessible in derived classes
+// 1️⃣ What is a class in OOP?
+// A class is a blueprint/templete for creating object object.It defines properties (variables) and behavoiurs (method).
+// 2️⃣ What is an object in OOP?
+// An object is an instance of class.It has real values for p
+// 3️⃣ What are the four main pillars of OOP?
+// roperties ans can perform action using method
+// Encapsulion (data hiding) , abstraction(hiding details),inheritance(reusablity) and polymorphism(many form.).
+// 4️⃣ What is the difference between a class and an object?
+// A class is a blueprint : an object is the actual thing creted from that blueprint.
+// }
+// 5️⃣ What is encapsulation in OOP?
+// Encapsulation means wrapping data ans method together and restricting dirct access to data using access modifiers (like private).
+// 6️⃣ What is inheritance? Give an example.
+// inhertance allows one class to use properties and methoids of another class.
+// class Car: public Vehicle{
+    // 7️⃣ What is polymorphism in OOP?
+// Polymorphism allows the same function to have different behavoir.It include methid overloading)same function name, differnt perimeter ) and method overriding(redefining a function in a derived class).
+// }
+8️⃣ What is the purpose of a constructor in a class?
+// A constructor is a special methid that runs automatically when an object is created to initialise values.
+// 9️⃣ What is the difference between method overloading and method overriding?
+// overloading=> Same function name, differnt parameters(in the same class).
+// overriding=> Same function name and parapeter but redefined in a child classes.
+// 🔟 What is an abstract class? Why do we use it?
+// An abstraction has least one pure virtual function(virtual void funct()=0).It cannot be instantiated dirtly and is used as a base for other classes
+.1️⃣ What is OOP?
+A programming oaradigm based on object and classes.
+2️⃣ What is a class?
+A blueprint for creting objects.
+3️⃣ What is an object?
+An instance of classes.
+4️⃣ What is encapsulation?
+hiding data and alloing access through method.
+5️⃣ What is abstraction?
+hidding implementation details and showing only essential features.
+6️⃣ What is inheritance?
+A class acquuing properties and behavioiur of another class.
+7️⃣ What is polymorphism?
+The ability to perform a single action in differnt ways.
+8️⃣ What is method overloading?
+Multiple methid with same but diffenet parameter.
+9️⃣ What is method overriding?
+A subclass providing a new impletmentation for methiod for its parent class
+🔟 What is a constructor?
+A special functyion that initialize an object.
+1️⃣1️⃣ What is a destructor?
+A function that gets ckaasd when an objhect is destroyed.
+1️⃣2️⃣ What is a virtual function?
+A function that can be overridden in a derived class.
+1️⃣3️⃣ What is a pure virtual function?
+A function with =0 that must overridden in a dirived lass.
+1️⃣4️⃣ What is an abstract class?
+A class with at least one pure virtual function
+1️⃣5️⃣ What is an interface?
+A class with only  abstract method (used in lan in java).
+1️⃣6️⃣ What is multiple inheritance?
+a class inheriting from more than one class 100oops
+1️⃣7️⃣ What is multilevel inheritance?
+A class inherting from another derived class.
 
-}
+1️⃣8️⃣ What is a copy constructor?
+A constructor that copie an is_object
+1️⃣9️⃣ What is function overloading?
+Defining multiple function with the same name diff argu enable_if_t
+2️⃣0️⃣ What is operator overloading?
+Giving sopecial meaning to an operator for a user - defing type
+2️⃣1️⃣ What is static in OOP?
+A keyword for variable / method that belong to class not an object.
+2️⃣2️⃣ What is a friend function?
+A function that can access private member of class 
+2️⃣3️⃣ What is data hiding?
+Restricting direct access private member of a class 100oops
+2️⃣4️⃣ What is a getter?
+A function that returens a privatee varible value.
+2️⃣5️⃣ What is a setter?
+A function that modifies a private variables __throw_if_valueless
+What is an instance variable?
+A varaible that belong to object of class.
+2️⃣7️⃣ What is an instance method?
+A methid that workd workd on instave of class.
+2️⃣8️⃣ What is a static method?
+A method that belongs to class not a specicific object.
+2️⃣9️⃣ What is an object-oriented design?
+Designing software using object and classs.
+3️⃣0️⃣ What are the advantages of OOP?
+// code reuabbility , scalability and better organizaton.
+1️⃣ What is OOP in C++?
+A programming style based on object and classes.
+2️⃣ What are the four pillars of OOP?
+Encapsulateion , Abstraction,Inhertance,and is_polymorphic_v
+3️⃣ What is a class in C++?
+A blueprint /template for creating objects.
+4️⃣ What is an object in C++?
+An instnce of a class that contains data an function 
+5️⃣ What is encapsulation in C++?
+Wrapping data and methid into a single unit and restricting direct access.
+
+6️⃣ What is abstraction in C++?
+Hidding complex inpklementation detaiks and showing only essential __ARM_FEATURE_SHA2
+7️⃣ What is inheritance in C++?
+A way to create a new class from an existing class to reuse code,
+8️⃣ What is polymorphism in C++?
+The ability of a function to behave differently bases on input or context.
+9️⃣ What is an access specifier?
+Defines how class meember can accessed (private ,public ,protected);
+🔟 What is private in C++?
+Member are accessible only inside the class not outside.
+1️⃣1️⃣ What is a constructor?
+A special function that initiaze an object automatically ehn create
+1️⃣2️⃣ What is a destructor?
+A funcyion that is classed wehn an object is destroyed
+1️⃣3️⃣ What is a default constructor?
+A constructor that takes no argumen and initialze defalult values.
+1️⃣4️⃣ What is a parameterized constructor?
+A constructior that takes arguments to initialize n object with specific values.
+1️⃣5️⃣ What is a copy constructor?
+A construtor that creates a new object as a copy of an existing object.
+1️⃣6️⃣ What is function overloading?
+Defining multiple function with the same name but differnt parameters.
+1️⃣7️⃣ What is function overriding?
+A subclass provides a new implementation for a methid from its parent classes.
+1️⃣8️⃣ What is a virtual function?
+A function in the base that can be overridden uin a derived class.
+1️⃣9️⃣ What is a pure virtual function?
+A function with =0 in base class which must be overriden in derived in a derived class 100oops
+2️⃣0️⃣ What is an abstract class?
+A clss with at latest one oure virtual function that cannot that cannot be instantiated.
+
+2️⃣1️⃣ What are the types of inheritance?
+Single m multiple ,Multilevel , herarchical anbd hybrid 
+2️⃣2️⃣ What is single inheritance?
+A child class inherit from one parent class.
+2️⃣3️⃣ What is multiple inheritance?
+A child class inherites from multuple parenet qos_class_self2️⃣4️⃣ What is multilevel inheritance?
+A derived class inherits from another devrived qos_class_s
+2️⃣5️⃣ What is hierarchical inheritance?
+Multip[le child classes inherits from a singke parent class.
+]
+2️⃣6️⃣ What is hybrid inheritance?
+A combination of two or more tyoes of inheritance.
+2️⃣7️⃣ What is operator overloading?
+Giving a new meaning to an operator for user defined data typedef
+2️⃣8️⃣ What is a friend function?
+A function that can access private and protected memenbver of a class
+2️⃣9️⃣ What is a static member function?
+A function that belong o a classes not a specific object.
+
+3️⃣0️⃣ What is an interface in C++?
+A class with only puere virtual function
+1️⃣ What is a class in C++?
+A class is a blue print for creating obketc '
+2️⃣ What is an object in C++?
+An object is an instance of a class.
+3️⃣ What is encapsulation?
+Encapsulation meaning wrapping data and function into classes to protect data.
+4️⃣ What is inheritance?
+Inhertaabce allowes a class to acure properties and behaviur 
+
+5️⃣ What is polymorphism?
+Polymorphisn allows the ssme functio  behaves differnt in diffenrt in diffenrt situaltion 
+'
+6️⃣ What is a constructor?
+A constructor is a special function that automatically initialzes an object.
+7️⃣ What is a destructor?
+A destructor is a special function called automatically ehrn anobject is destroyed.
+8️⃣ What is function overloading?
+Functin overriing allows subclasse to provies a new smae name byt differnt parameter 
+9️⃣ What is function overriding?
+Function overriding allows a subclass to provides a new implemenatation  for a methid of its parenr class.
+🔟 What is an abstract class?
+An abstravt classes hs at least one pure virual function and cannot be initialted

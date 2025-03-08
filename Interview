@@ -1,0 +1,283 @@
+// // #include<iostream>
+// // using namespace std;
+// // class Car{
+// // public:
+// // string brand;
+// // int speed;
+// // void display(){
+// //     cout<<"Brand : "<<brand<<endl;
+// //     cout<<"Speed : "<<speed<<endl;
+// // }
+// // };
+// // class BankAccount{
+// //     public:
+// //     double balance;
+
+// //     public:
+// //     void setBalance(double balance){
+// //         this->balance = balance;
+// //     }
+// //     double getBalance(){
+// //         return balance;
+// //     }
+// // };
+// // int main(){
+// //     // . What is Object-Oriented Programming (OOP) in C++?
+
+// //     // OOPS is a programming language pardam that organise code using object and classes.it follows priciple like Encapusulation , INheritace ,polymorphism , and Abstraction.
+
+// //     // 2. What is a Class and an Object in C++?
+// //     // Class : A blueprint for creating objects.
+// //     // object :An instance of a class.
+// //     // Car car1;
+// //     // car1.brand = "Toyota";
+// //     // car1.speed = 200;
+// //     // car1.display();
+
+// //     // Car car2;
+// //     // car2.brand = "BMW";
+// //     // car2.speed = 300;
+// //     // car2.display();
+
+// //     // // 3. What is Encapsulation? Give an Example.
+// //     // Encapusation is data hiding by making class member private and providing getter and setter method.
+// //     BankAccount acc;
+// //     acc.setBalance(1000.98);
+// //     cout<<"Balance : "<<acc.getBalance()<<endl;
+
+// //     // // 4. What is Inheritance? Give an Example.
+// //     // // Inheritance allows a class to inherit properties and methods from another class.
+// //     // class Animal{
+// // // Previous 7 Days
+// // // Previous 30 Days
+// // // Upgrade plan
+// // // More access to the best models
+
+// // // ChatGPT
+
+// // // Share
+
+// // // A
+// // // You said:
+// // // i am preparing for interveiw for oops in cpp 5 easy in cpp of intervew
+// // // ChatGPT said:
+// // // Here are 5 easy OOPs questions in C++ that are commonly asked in interviews:
+
+// // // 1. What is Object-Oriented Programming (OOP) in C++?
+// // // ✅ Answer: OOP is a programming paradigm that organizes code using objects and classes. It follows principles like Encapsulation, Inheritance, Polymorphism, and Abstraction.
+
+// // // 2. What is a Class and an Object in C++?
+// // // ✅ Answer:
+
+// // // Class: A blueprint for creating objects.
+// // // Object: An instance of a class.
+// // // 📌 Example:
+
+// // #include <iostream>
+// // using namespace std;
+
+// // class Car {
+// // public:
+// //     string brand;
+// //     int speed;
+
+// //     void display() {
+// //         cout << "Brand: " << brand << ", Speed: " << speed << " km/h" << endl;
+// //     }
+// // };
+
+// // int main() {
+// //     Car car1;  // Object of class Car
+// //     car1.brand = "Toyota";
+// //     car1.speed = 120;
+// //     car1.display();
+// //     return 0;
+// // }
+// // // 3. What is Encapsulation? Give an Example.
+// // // ✅ Answer:
+// // // Encapsulation is data hiding by making class members private and providing public getter/setter methods.
+
+// // // 📌 Example:
+
+// // #include <iostream>
+// // using namespace std;
+
+// // class BankAccount {
+// // private:
+// //     double balance;
+
+// // public:
+// //     void setBalance(double b) {
+// //         balance = b;
+// //     }
+
+// //     double getBalance() {
+// //         return balance;
+// //     }
+// // };
+
+// // int main() {
+// //     BankAccount acc;
+// //     acc.setBalance(1000.50);
+// //     cout << "Balance: " << acc.getBalance() << endl;
+// //     return 0;
+
+// // // 4. What is Inheritance in C++?
+// // // Inherihance allows a child to inherit propertites from a parent class.
+// //     return 0;
+
+// // }
+// #include<iostream>
+// using namespace std;
+// class Animal{
+//     public:
+//     void eat(){
+//         cout<<"Animal is eating"<<endl;
+//     }
+// };
+// class Dog:public Animal{
+//     public:
+//     void bark(){
+//         cout<<"Dog is barking"<<endl;
+//     }
+// };
+// class Math{
+//     public:
+//     int add(int x,int y){
+//         return x+y;
+//     }
+//     double add(double x,double y){
+//         return x+y;
+//     }
+// };
+
+// class Shape{
+//     public:
+//     virtual void area()=0;
+// };
+// class Circle: public Shape{
+//     private:
+//     double radius;
+
+//     public:
+//     Circle(double r){
+//         radius = r;
+//     }
+//     void area(){
+//         cout<<"Area of circle : "<<3.14*radius*radius<<endl;
+//     }
+
+// };
+#include <iostream>
+using namespace std;
+class Base
+{
+public:
+    virtual void show()
+    {
+        cout << "Base class show " << endl;
+    }
+};
+class Derived : public Base
+{
+public:
+    void show() override
+    {
+        cout << "Derived class show " << endl;
+    }
+};
+
+class A
+{
+public:
+    void show()
+    {
+        cout << "Class A show " << endl;
+    }
+};
+class B : public A
+{
+};
+
+class C : public A
+{
+};
+
+class D : public B, public C
+{
+};
+
+class Demo
+{
+
+public:
+    Demo()
+    {
+        cout << "Demo class show " << endl;
+    }
+
+    ~Demo()
+    {
+        cout << "Demo class destructor show " << endl;
+    }
+};
+
+class Math
+{
+public:
+    int add(int a, int b)
+    {
+        return a + b;
+    }
+    int add(int a, int b, int c)
+    {
+        return a + b + c;
+    }
+
+    double add(double a, double b, double c)
+    {
+        return a + b + c;
+    }
+};
+int main()
+{
+    // Dog myDog;
+    // myDog.eat();
+    // myDog.bark();
+    // 5. What is Polymorphism in C++?
+    // Polymorphism allows function to have multiple forms.It is achieved voa function overloading and function overriding .
+    // Math m1;
+    // cout<<m1.add(5,6)<<endl;
+    // cout<<m1.add(5.5,6.7)<<endl;
+    // // 1. What is Abstraction? How is it implemented in C++?
+    // Abstraction hides implementation details and shows only thr necesssaary feature to user.It is achieved using abstact classes(using pure virtual function) or interfaces.
+    // Shape *s=new Circle(5);
+    // s->area();
+    // delete s;
+
+    // 2. What is the Difference Between Compile-time and Run-time Polymorphism?
+
+    // // compile - time polymorphism :->Achieved using function overloading and operator overator overloading.The function to be called is decibide a cinplier.
+    // Run - time Polymorphism:Achiveed using function overriding and virtual function.The function call is resolvesd at runtime using dynamic binding.
+
+    // Base* b=new Derived();
+    // b->show();
+    // delete b;
+
+    // 3. What is the Diamond Problem in C++? How Do You Solve It?
+    // The dimond problem occurs in multiple inheritance when a child class inherits from two classes that share that share a common base class.
+
+    // D obj;
+    // obj.show();
+
+    // cout<<"creating object .."<<endl;
+    // Demo d;
+    // cout<<"deleting object .."<<endl;
+
+    // // Question: What is Function Overloading in C++? Explain with an example.
+
+    // Math m;
+    // cout<<m.add(5,6)<<endl;
+    // cout<<m.add(5,6,7)<<endl;
+    // cout<<m.add(5.5,6.7,7.8)<<endl;
+}
